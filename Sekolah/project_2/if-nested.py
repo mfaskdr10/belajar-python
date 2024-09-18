@@ -1,5 +1,4 @@
 grade = int(input("Enter your grade: "))
-list = []
 
 if grade == 100:
   print("perfect")
