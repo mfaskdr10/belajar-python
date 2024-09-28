@@ -2,8 +2,10 @@ r1 = int(input("Masukkan Rentang Angka Pertama = ")) # Memasukkan input rentang 
 r2 = int(input("Masukkan Rentang Angka Terakhir = ")) + 1 # Memasukkan input rentang angka kedua, +1 ini berfungsi ketika kita ingin memanggil list_prima. Maka akan menampilkan bilangan sebelum inputan
 list_prima = [] # Untuk memanggil bilangan prima nantinya
 
-for p in range (r1, r2) : # p dalam range rentang 1 dan rentang 2
-    if p > 2 : # 1 dan 2 bukan  bilangan prima, karena pasti habis dibagi 1 dan 2
+for p in range (r1, r2) :
+    if p == 2:
+        list_prima.append(p)
+    if p > 2 : 
         a = 1
         b = 0
         while p > a :
